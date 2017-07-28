@@ -4,4 +4,4 @@ This has been built using a django framework and is only to demonstrate a possib
 
 If you are unfamiliar with django you can run this app using the command python3 manage.py runserver
 
-<img src="MySite/Demo/1.gif">
+<img src="Demo/1.gif">
