@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+
+{% load static %}
+<head>
+  <title>Data Entry</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="{% static 'OnTheGo/css/bootstrap.min.css' %}" rel='stylesheet' type='text/css'></link>
+  <link href="{% static 'OnTheGo/css/custom.css' %}" rel='stylesheet' type='text/css'></link>
+  <script src="{% static 'OnTheGo/js/jquery.min.js' %}"></script>
+  <script src="{% static 'OnTheGo/js/bootstrap.min.js' %}"></script>
+</head>
+
+<body class="body" >
+	<div>
+	   {% block content %}
+	   {% endblock %}
+	</div>
+</body>
+
+
+</html>

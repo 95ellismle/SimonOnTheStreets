@@ -1,0 +1,8 @@
+{% extends "OnTheGo/header.html" %}
+{% block content %}
+<h1 style='display: inline'>{{x.user}} </h1> <h2 style='display: inline;'> -{{x.age}}</h2>
+<br />
+<br />
+{% include 'OnTheGo/includes/form.html' %}
+<h3>Diary Entries:</h3>
+{% endblock %}

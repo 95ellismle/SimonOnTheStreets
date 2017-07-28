@@ -1,0 +1,31 @@
+{% block content %}
+<form>
+<h4 style='display: inline;'>Level of Support </h4> &emsp;
+   {% if x.level_of_support == 1 %}
+   <input type="radio" name='LOS' value='Full Time' checked/> Full Time
+   {% else %}
+   <input type="radio" name='LOS' value='Full Time'/> Full Time
+   {% endif %}
+
+   {% if x.level_of_support == 2 %}
+   <input type="radio" name='LOS' value='Part Time' checked/> Part Time
+   {% else %}
+   <input type="radio" name='LOS' value='Part Time'/> Part Time
+   {% endif %}
+
+   {% if x.level_of_support == 3 %}
+   <input type="radio" name='LOS' value='Potential' checked/> Potential
+   {% else %}
+   <input type="radio" name='LOS' value='Potential'/> Potential
+   {% endif %}
+
+   {% if x.level_of_support == 4 %}
+   <input type="radio" name='LOS' value='Parked' checked/> Parked
+   {% else %}
+   <input type="radio" name='LOS' value='Parked'/> Parked
+   {% endif %}
+
+
+</form>
+
+{% endblock %}

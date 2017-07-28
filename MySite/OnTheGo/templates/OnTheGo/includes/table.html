@@ -1,0 +1,24 @@
+{% block content %}
+<table class='table'>
+    <tr>
+      <th>Support Worker</th>
+      <th>Level of Support</th>
+      <th>Last Seen</th>
+      <th>Goals Achieved</th>
+   </tr>
+   <tr>
+      <td>{{obj.support_worker}}</td>
+     {% if obj.level_of_support == 1 %}
+      <td>Full time</td>
+     {% elif obj.level_of_support == 2 %}
+     <td>Part Time</td>
+     {% elif obj.level_of_support == 3 %}
+     <td>Potential</td>
+     {% elif obj.level_of_support == 4 %}
+     <td>Parked</td>
+     {% endif  %}
+     <td> <B>{{obj.last_contact_place}}</B> <br /> at <B>{{obj.last_contact_time|date:"H:i"}}</B> on <B>{{obj.last_contact_time|date:"d/m/Y"}}</B>  </td>
+     <td>{{obj.goals_achieved}}</td>
+ </tr>
+</table>
+{% endblock %}
